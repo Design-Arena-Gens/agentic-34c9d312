@@ -1,0 +1,42 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { color: #0f172a; background: #f8fafc; }
+:root {
+  --accent: #2563eb; /* blue-600 */
+  --accent-2: #0ea5e9; /* sky-500 */
+}
+.container {
+  max-width: 980px; margin: 0 auto; padding: 32px 20px 64px;
+}
+.siteHeader { text-align: center; margin-bottom: 28px; }
+.siteHeader h1 { font-size: 32px; margin: 0 0 6px; }
+.tagline { margin: 0; color: #475569; }
+.card {
+  background: white; border: 1px solid #e2e8f0; border-radius: 14px; padding: 18px 18px; margin: 14px 0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+}
+.card h3 { margin-top: 0; }
+.twoCol { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 900px) { .twoCol { grid-template-columns: 1.1fr 0.9fr; } }
+.kv { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.kv div { background: #f1f5f9; padding: 10px; border-radius: 10px; }
+.badge { display: inline-block; background: #e0f2fe; color: #0369a1; padding: 4px 10px; border-radius: 999px; font-weight: 600; font-size: 12px; }
+.caption { color: #64748b; font-size: 13px; }
+.siteFooter { text-align: center; margin-top: 40px; color: #64748b; font-size: 14px; }
+.buttonRow { display: flex; gap: 8px; flex-wrap: wrap; }
+.btn { cursor: pointer; background: var(--accent); color: white; border: none; padding: 10px 14px; border-radius: 10px; font-weight: 600; }
+.btn.secondary { background: #0ea5e9; }
+.sectionTitle { font-size: 22px; margin-bottom: 8px; }
+.table { width: 100%; border-collapse: collapse; font-size: 15px; }
+.table th, .table td { border: 1px solid #e2e8f0; padding: 10px; text-align: left; }
+.table th { background: #f8fafc; }
+.hero {
+  background: linear-gradient(120deg, rgba(37,99,235,0.07), rgba(14,165,233,0.07));
+  border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px; margin-bottom: 16px;
+}
+.small { font-size: 14px; }
+.timeline { position: relative; padding-left: 18px; }
+.timeline::before { content: ""; position: absolute; left: 6px; top: 0; bottom: 0; width: 2px; background: #e2e8f0; }
+.timelineItem { position: relative; margin: 10px 0 10px 0; }
+.timelineItem::before { content: ""; position: absolute; left: -1px; top: 6px; width: 14px; height: 14px; background: white; border: 2px solid var(--accent); border-radius: 999px; }
+.lead { font-size: 18px; color: #334155; }
